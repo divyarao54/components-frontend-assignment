@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 interface Column<T> {
     key: keyof T;
     title: string;
@@ -26,10 +26,6 @@ const DataTable = <T,>({ tableProps }: { tableProps: DataTableProps<T> }) => {
 		loading,
 		selectable,
 		onRowSelect,
-		onColumnChange,
-		onDataChange,
-		onLoadingChange,
-		onSelectableChange,
 		onRowSelectChange,
 	} = tableProps;
 
@@ -49,7 +45,7 @@ const DataTable = <T,>({ tableProps }: { tableProps: DataTableProps<T> }) => {
 		}
 	};
 
-	const handleLoadingToggle = () => {
+	/*const handleLoadingToggle = () => {
 		if (onLoadingChange) onLoadingChange(!loading);
 	};
 
@@ -76,7 +72,7 @@ const DataTable = <T,>({ tableProps }: { tableProps: DataTableProps<T> }) => {
 			}
 			onDataChange(newData);
 		}
-	};
+	};*/
 
 	return (
 		<div className="overflow-x-auto">

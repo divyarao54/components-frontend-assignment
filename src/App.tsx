@@ -7,10 +7,10 @@ import DataTable from './components/DataTable';
 function App() {
   const [inputValue, setInputValue] = useState('');
 
-  const [inputError, setInputError] = useState('');
-  const [inputHelperText, setInputHelperText] = useState('');
-  const [inputDisabled, setInputDisabled] = useState(false);
-  const [inputInvalid, setInputInvalid] = useState(false);
+  //const [inputError, setInputError] = useState('');
+  //const [inputHelperText, setInputHelperText] = useState('');
+  const [inputDisabled/*, setInputDisabled*/] = useState(false);
+  const [inputInvalid/*, setInputInvalid*/] = useState(false);
   const [inputVariant, setInputVariant] = useState<'filled' | 'outlined' | 'ghost'>('outlined');
   const [inputSize, setInputSize] = useState<'sm' | 'md' | 'lg'>('md');
   const [inputLabel, setInputLabel] = useState('Input Field');
