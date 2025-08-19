@@ -92,3 +92,13 @@ export const Selectable: Story = {
     },
   },
 };
+
+export const HoverAndClickRows: Story = {
+  args: {
+    tableProps: {
+      data,
+      columns,
+      selectable: false,
+    },
+  },
+};

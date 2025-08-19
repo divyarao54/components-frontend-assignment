@@ -99,7 +99,7 @@ const DataTable = <T,>({ tableProps }: { tableProps: DataTableProps<T> }) => {
 						data.map((row, index) => (
 							<tr
 								key={index}
-								className={`border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 ${selectable && selectedRows.includes(row) ? 'bg-blue-100 dark:bg-blue-900' : ''}`}
+								className={`border-b dark:border-gray-600 hover:bg-gray-100 active:bg-gray-200 transition-colors dark:hover:bg-gray-700 ${selectable && selectedRows.includes(row) ? 'bg-blue-100 dark:bg-blue-900' : ''}`}
 								onClick={() => handleRowClick(row)}
 								style={{ cursor: selectable ? 'pointer' : 'default' }}
 							>
