@@ -76,7 +76,7 @@ const DataTable = <T,>({ tableProps }: { tableProps: DataTableProps<T> }) => {
 
 	return (
 		<div className="overflow-x-auto">
-			<table className="min-w-full bg-white dark:bg-gray-800">
+			<table className="min-w-full bg-gray-200 dark:bg-gray-800">
 				<thead>
 					<tr className="bg-gray-200 dark:bg-gray-700">
 						{columns.map((column) => (
