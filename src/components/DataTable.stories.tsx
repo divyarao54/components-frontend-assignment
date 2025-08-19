@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import DataTable from "./DataTable";
+import '../index.css';
 
 // Define a type for our demo data
 interface User {
