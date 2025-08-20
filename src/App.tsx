@@ -220,15 +220,15 @@ function App() {
 
               <div>
                 <div className = 'center text-gray-700'>Input variants</div>
-                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputVariantChange('filled')}>Filled</button>
-                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputVariantChange('outlined')}>Outlined</button>
-                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputVariantChange('ghost')}>Ghost</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-100 rounded' onClick={() => handleInputVariantChange('filled')}>Filled</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-100 rounded' onClick={() => handleInputVariantChange('outlined')}>Outlined</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-100 rounded' onClick={() => handleInputVariantChange('ghost')}>Ghost</button>
               </div>
               <div>
                 <div className = 'center text-gray-700'>Input sizes</div>
-                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputSizeChange('sm')}>Small</button>
-                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputSizeChange('md')}>Medium</button>
-                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputSizeChange('lg')}>Large</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-100 rounded' onClick={() => handleInputSizeChange('sm')}>Small</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-100 rounded' onClick={() => handleInputSizeChange('md')}>Medium</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-100 rounded' onClick={() => handleInputSizeChange('lg')}>Large</button>
               </div>
 
               <div>
@@ -272,7 +272,7 @@ function App() {
               </div>
 
               <div>
-                <label>
+                <label className='text-black'>
                   <input
                     type="checkbox"
                     checked={darkThemeToggle}
