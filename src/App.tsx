@@ -330,7 +330,7 @@ function App() {
               <div>
                 <label className='text-white inline-block w-40'> Input type: </label>
                 <select
-                  className='border rounded bg-white px-3 py-2 w-52 bg-gray-900'
+                  className='border rounded px-3 py-2 w-52 bg-gray-900'
                   value={inputType}
                   onChange={(e) => handleInputTypeChange(e.target.value as React.HTMLInputTypeAttribute)}
                 >
