@@ -138,7 +138,7 @@ function App() {
           <div id="input-container" className='center flex-col gap-4 p-4 bg-gray-100 rounded-lg shadow-md flex flex-row gap-8'>
             <div id="input-details-container" className='flex flex-col gap-4'>
               <div>
-                <label className='inline-block w-40'> Input type: </label>
+                <label className='inline-block w-40 text-black'> Input type: </label>
                 <select
                   className='border rounded px-3 py-2 w-52'
                   value={inputType}
@@ -154,7 +154,7 @@ function App() {
               </div>
               
               <div>
-                <label className='inline-block w-40'>Input Label: </label>
+                <label className='inline-block w-40 text-black'>Input Label: </label>
                 <input
                   className='border rounded px-3 py-2 bg-white text-gray-900 placeholder-gray-400'
                   type="text"
@@ -164,7 +164,7 @@ function App() {
                 />
               </div>
               <div>
-                <label className='inline-block w-40'>Input Placeholder: </label>
+                <label className='inline-block w-40 text-black'>Input Placeholder: </label>
                 <input
                   className='border rounded px-3 py-2 bg-white text-gray-900 placeholder-gray-400'
                   type="text"
@@ -174,7 +174,7 @@ function App() {
                 />
               </div>
               <div>
-                <label className='inline-block w-40'>Input Helper Text: </label>
+                <label className='inline-block w-40 text-black'>Input Helper Text: </label>
                 <input
                   className='border rounded px-3 py-2 bg-white text-gray-900 placeholder-gray-400'
                   type="text"
@@ -184,7 +184,7 @@ function App() {
                 />
               </div>
               <div>
-                <label className='inline-block w-40'>Input Error Message: </label>
+                <label className='inline-block w-40 text-black'>Input Error Message: </label>
                 <input
                   className='border rounded px-3 py-2 bg-white text-gray-900 placeholder-gray-400'
                   type="text"
@@ -195,7 +195,7 @@ function App() {
               </div>
               
               <div>
-                <label className='inline-block w-40'>
+                <label className='inline-block w-40 text-black'>
                   <input
                     type="checkbox"
                     checked={inputDisabledState}
@@ -207,7 +207,7 @@ function App() {
               </div>
               
               <div>
-                <label className='inline-block w-40'>
+                <label className='inline-block w-40 text-black'>
                   <input
                     type="checkbox"
                     checked={inputInvalidState}
@@ -219,13 +219,13 @@ function App() {
               </div>
 
               <div>
-                <div className = 'center text-gray-700 dark:text-gray-200'>Input variants</div>
+                <div className = 'center text-gray-700'>Input variants</div>
                 <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputVariantChange('filled')}>Filled</button>
                 <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputVariantChange('outlined')}>Outlined</button>
                 <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputVariantChange('ghost')}>Ghost</button>
               </div>
               <div>
-                <div className = 'center text-gray-700 dark:text-gray-200'>Input sizes</div>
+                <div className = 'center text-gray-700'>Input sizes</div>
                 <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputSizeChange('sm')}>Small</button>
                 <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputSizeChange('md')}>Medium</button>
                 <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputSizeChange('lg')}>Large</button>
@@ -237,7 +237,7 @@ function App() {
                     type="checkbox"
                     checked={inputLoading}
                     onChange={(e) => handleInputLoadingChange(e.target.checked)}
-                    className='mr-2'
+                    className='mr-2 text-black'
                   />
                   Loading
                 </label>
@@ -249,7 +249,7 @@ function App() {
                     type="checkbox"
                     checked={clearable}
                     onChange={(e) => setClearable(e.target.checked)}
-                    className='mr-2'
+                    className='mr-2 text-black'
                   />
                   Clearable
                 </label>
@@ -265,7 +265,7 @@ function App() {
                     type="checkbox"
                     checked={showPasswordToggle}
                     onChange={handleShowPasswordToggle}
-                    className='mr-2'
+                    className='mr-2 text-black'
                   />
                   Show Password Toggle
                 </label>
@@ -277,7 +277,7 @@ function App() {
                     type="checkbox"
                     checked={darkThemeToggle}
                     onChange={handleDarkThemeToggle}
-                    className='mr-2'
+                    className='mr-2 text-black'
                   />
                   Dark Theme Toggle
                 </label>
@@ -285,15 +285,15 @@ function App() {
             </div>
 
             <div id="input-details-display" className='flex flex-col gap-4'>
-                <div>Input Value: {inputValue}</div>
-                <div>Input Disabled: {inputDisabled ? 'Yes' : 'No'}</div>
-                <div>Input Invalid: {inputInvalid ? 'Yes' : 'No'}</div>
-                <div>Input Variant: {inputVariant}</div>
-                <div>Input Size: {inputSize}</div>
-                <div>Input Label: {inputLabel}</div>
-                <div>Input Placeholder: {inputPlaceholder}</div>
-                <div>Input Helper Text: {inputHelperTextMessage}</div>
-                <div>Input Error Message: {inputErrorMessage}</div>
+                <div className='text-black'>Input Value: {inputValue}</div>
+                <div className='text-black'>Input Disabled: {inputDisabled ? 'Yes' : 'No'}</div>
+                <div className='text-black'>Input Invalid: {inputInvalid ? 'Yes' : 'No'}</div>
+                <div className='text-black'>Input Variant: {inputVariant}</div>
+                <div className='text-black'>Input Size: {inputSize}</div>
+                <div className='text-black'>Input Label: {inputLabel}</div>
+                <div className='text-black'>Input Placeholder: {inputPlaceholder}</div>
+                <div className='text-black'>Input Helper Text: {inputHelperTextMessage}</div>
+                <div className='text-black'>Input Error Message: {inputErrorMessage}</div>
             </div>
           </div>
         
