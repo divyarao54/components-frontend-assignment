@@ -135,7 +135,7 @@ function App() {
       {!darkThemeToggle && (
       <>
         <div className='flex flex-row gap-8'>
-          <div id="input-container" className='center flex-col gap-4 p-4 bg-gray-100 dark:bg-gray-900 rounded-lg shadow-md flex flex-row gap-8'>
+          <div id="input-container" className='center flex-col gap-4 p-4 bg-gray-100 rounded-lg shadow-md flex flex-row gap-8'>
             <div id="input-details-container" className='flex flex-col gap-4'>
               <div>
                 <label className='inline-block w-40'> Input type: </label>
@@ -156,7 +156,7 @@ function App() {
               <div>
                 <label className='inline-block w-40'>Input Label: </label>
                 <input
-                  className='border rounded px-3 py-2 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500'
+                  className='border rounded px-3 py-2 bg-white text-gray-900 placeholder-gray-400'
                   type="text"
                   value={inputLabel}
                   onChange={(e) => handleInputLabelChange(e.target.value)}
@@ -166,7 +166,7 @@ function App() {
               <div>
                 <label className='inline-block w-40'>Input Placeholder: </label>
                 <input
-                  className='border rounded px-3 py-2 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500'
+                  className='border rounded px-3 py-2 bg-white text-gray-900 placeholder-gray-400'
                   type="text"
                   value={inputPlaceholder}
                   onChange={(e) => handleInputPlaceholderChange(e.target.value)}
@@ -176,7 +176,7 @@ function App() {
               <div>
                 <label className='inline-block w-40'>Input Helper Text: </label>
                 <input
-                  className='border rounded px-3 py-2 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500'
+                  className='border rounded px-3 py-2 bg-white text-gray-900 placeholder-gray-400'
                   type="text"
                   value={inputHelperTextMessage}
                   onChange={(e) => handleInputHelperTextChange(e.target.value)}
@@ -186,7 +186,7 @@ function App() {
               <div>
                 <label className='inline-block w-40'>Input Error Message: </label>
                 <input
-                  className='border rounded px-3 py-2 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500'
+                  className='border rounded px-3 py-2 bg-white text-gray-900 placeholder-gray-400'
                   type="text"
                   value={inputErrorMessage}
                   onChange={(e) => handleInputErrorMessageChange(e.target.value)}
@@ -220,15 +220,15 @@ function App() {
 
               <div>
                 <div className = 'center text-gray-700 dark:text-gray-200'>Input variants</div>
-                <button className='px-3 py-1 m-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputVariantChange('filled')}>Filled</button>
-                <button className='px-3 py-1 m-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputVariantChange('outlined')}>Outlined</button>
-                <button className='px-3 py-1 m-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputVariantChange('ghost')}>Ghost</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputVariantChange('filled')}>Filled</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputVariantChange('outlined')}>Outlined</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputVariantChange('ghost')}>Ghost</button>
               </div>
               <div>
                 <div className = 'center text-gray-700 dark:text-gray-200'>Input sizes</div>
-                <button className='px-3 py-1 m-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputSizeChange('sm')}>Small</button>
-                <button className='px-3 py-1 m-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputSizeChange('md')}>Medium</button>
-                <button className='px-3 py-1 m-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputSizeChange('lg')}>Large</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputSizeChange('sm')}>Small</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputSizeChange('md')}>Medium</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 rounded' onClick={() => handleInputSizeChange('lg')}>Large</button>
               </div>
 
               <div>
@@ -410,15 +410,15 @@ function App() {
 
               <div>
                 <div className = 'center text-white'>Input variants</div>
-                <button className='px-3 py-1 m-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputVariantChange('filled')}>Filled</button>
-                <button className='px-3 py-1 m-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputVariantChange('outlined')}>Outlined</button>
-                <button className='px-3 py-1 m-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputVariantChange('ghost')}>Ghost</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputVariantChange('filled')}>Filled</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputVariantChange('outlined')}>Outlined</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputVariantChange('ghost')}>Ghost</button>
               </div>
               <div>
                 <div className = 'center text-white'>Input sizes</div>
-                <button className='px-3 py-1 m-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputSizeChange('sm')}>Small</button>
-                <button className='px-3 py-1 m-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputSizeChange('md')}>Medium</button>
-                <button className='px-3 py-1 m-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputSizeChange('lg')}>Large</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputSizeChange('sm')}>Small</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputSizeChange('md')}>Medium</button>
+                <button className='px-3 py-1 m-1 bg-gray-200 text-gray-800 dark:text-gray-100 rounded' onClick={() => handleInputSizeChange('lg')}>Large</button>
               </div>
 
               <div>
