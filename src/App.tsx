@@ -232,24 +232,24 @@ function App() {
               </div>
 
               <div>
-                <label>
+                <label className='text-black'>
                   <input
                     type="checkbox"
                     checked={inputLoading}
                     onChange={(e) => handleInputLoadingChange(e.target.checked)}
-                    className='mr-2 text-black'
+                    className='mr-2'
                   />
                   Loading
                 </label>
               </div>
 
               <div>
-                <label>
+                <label className='text-black'>
                   <input
                     type="checkbox"
                     checked={clearable}
                     onChange={(e) => setClearable(e.target.checked)}
-                    className='mr-2 text-black'
+                    className='mr-2'
                   />
                   Clearable
                 </label>
@@ -260,12 +260,12 @@ function App() {
                 )}
               </div>
               <div>
-                <label>
+                <label className='text-black'>
                   <input
                     type="checkbox"
                     checked={showPasswordToggle}
                     onChange={handleShowPasswordToggle}
-                    className='mr-2 text-black'
+                    className='mr-2'
                   />
                   Show Password Toggle
                 </label>
@@ -277,7 +277,7 @@ function App() {
                     type="checkbox"
                     checked={darkThemeToggle}
                     onChange={handleDarkThemeToggle}
-                    className='mr-2 text-black'
+                    className='mr-2'
                   />
                   Dark Theme Toggle
                 </label>
