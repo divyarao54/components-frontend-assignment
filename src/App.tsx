@@ -330,16 +330,16 @@ function App() {
               <div>
                 <label className='text-white inline-block w-40'> Input type: </label>
                 <select
-                  className='border rounded bg-white px-3 py-2 w-52'
+                  className='border rounded bg-white px-3 py-2 w-52 bg-gray-900'
                   value={inputType}
                   onChange={(e) => handleInputTypeChange(e.target.value as React.HTMLInputTypeAttribute)}
                 >
-                  <option value="text">Text</option>
-                  <option value="email">Email</option>
-                  <option value="password">Password</option>
-                  <option value="number">Number</option>
-                  <option value="tel">Telephone</option>
-                  <option value="url">URL</option>
+                  <option className='bg-gray-900' value="text">Text</option>
+                  <option className='bg-gray-900' value="email">Email</option>
+                  <option className='bg-gray-900' value="password">Password</option>
+                  <option className='bg-gray-900' value="number">Number</option>
+                  <option className='bg-gray-900' value="tel">Telephone</option>
+                  <option className='bg-gray-900' value="url">URL</option>
                 </select>
               </div>
               
